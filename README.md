@@ -1,4 +1,5 @@
 # Kosi River Basin Flood-Susceptibility Research Pipeline
+[![DOI](https://zenodo.org/badge/1465427899.svg)](https://doi.org/10.5281/zenodo.24397790)
 
 Research-code bundle for the complete recovered 508-microcatchment, graph-based flood-susceptibility workflow, from raster harmonisation and feature engineering through QC, graph construction, VGAE-derived susceptibility classes, clustering, surrogate benchmarking and SHAP interpretation. All 17 included Python scripts now use consistent sequential, descriptive filenames.
 
