@@ -1,0 +1,2 @@
+basin_id,node_index,actual_class,predicted_class,predicted_probability_class5,selection_rule
+139,138,5,5,0.9914027636804152,correctly classified class-5 microcatchment closest to the class-5 feature median

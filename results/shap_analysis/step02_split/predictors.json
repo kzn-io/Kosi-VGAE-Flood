@@ -1,0 +1,50 @@
+{
+    "target": "VGAE_FSM5",
+    "predictors": [
+        "Clay_0_5cm_scaled_mean",
+        "Clay_0_5cm_scaled_std",
+        "DEM_scaled_mean",
+        "DEM_scaled_std",
+        "Distance_to_Main_River_scaled_mean",
+        "Distance_to_Main_River_scaled_std",
+        "Drainage_Density_scaled_mean",
+        "Drainage_Density_scaled_std",
+        "ET_scaled_mean",
+        "ET_scaled_std",
+        "Max1Day_Rainfall_scaled_mean",
+        "Max1Day_Rainfall_scaled_std",
+        "Mean_Rainfall_scaled_mean",
+        "Mean_Rainfall_scaled_std",
+        "SMAP_scaled_mean",
+        "SMAP_scaled_std",
+        "SPI_scaled_mean",
+        "SPI_scaled_std",
+        "Sand_0_5cm_scaled_mean",
+        "Sand_0_5cm_scaled_std",
+        "Silt_0_5cm_scaled_mean",
+        "Silt_0_5cm_scaled_std",
+        "Slope_scaled_mean",
+        "Slope_scaled_std",
+        "TWI_scaled_mean",
+        "TWI_scaled_std",
+        "WorldCover_10_fraction",
+        "WorldCover_20_fraction",
+        "WorldCover_30_fraction",
+        "WorldCover_40_fraction",
+        "WorldCover_50_fraction",
+        "WorldCover_60_fraction",
+        "WorldCover_80_fraction",
+        "WorldCover_90_fraction"
+    ],
+    "excluded_identifier_columns": [
+        "basin_id",
+        "node_index"
+    ],
+    "excluded_non_predictor_columns": [
+        "VGAE_FSM5_name"
+    ],
+    "n_predictors": 34,
+    "random_state": 42,
+    "test_size": 0.2,
+    "split_method": "stratified random hold-out"
+}

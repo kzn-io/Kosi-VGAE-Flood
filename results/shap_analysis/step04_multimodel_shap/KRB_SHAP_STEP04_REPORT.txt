@@ -1,0 +1,29 @@
+KRB VGAE-SHAP | STEP 4 MULTIMODEL SHAP REPORT
+========================================================================
+Basins explained: 508
+Environmental predictors: 34
+Models: LightGBM, Random Forest, XGBoost
+Explanation method: SHAP TreeExplainer
+Target being explained: VGAE-derived five-class label (VGAE_FSM5)
+Class codes: 1 Very Low; 2 Low; 3 Moderate; 4 High; 5 Very High
+SHAP calculation: all 508 basins; fitted models were trained on 406 training basins
+Spatial output: per-model, per-output-class dominant local feature attribution
+
+Models passed: 3
+Models failed: 0
+
+        Model Status   SHAP_Shape  Basins_Explained  Predictors  Long_Table_Rows
+     LightGBM   PASS (508, 34, 5)               508          34            86360
+Random_Forest   PASS (508, 34, 5)               508          34            86360
+      XGBoost   PASS (508, 34, 5)               508          34            86360
+
+INTERPRETATION LIMITS:
+SHAP explains each surrogate model's approximation of VGAE_FSM5.
+SHAP values are model attributions, not causal effects.
+These are not direct observed flood-occurrence predictions.
+Spatial attributions are conditional on the fitted surrogate models.
+
+OUTPUT FOLDER:
+/mnt/data/Kosi_River_Basin_Flood_Susceptibility_GitHub/results/shap_analysis/step04_multimodel_shap
+
+STATUS: PASS

@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.vscode/
+.idea/
+# Raw / bulky geospatial inputs and intermediate rasters
+*.tif
+*.tiff
+*.vrt
+*.img
+*.aux.xml
+*.ovr
+# Local model outputs / temporary files
+*.log
+*.tmp
+outputs/

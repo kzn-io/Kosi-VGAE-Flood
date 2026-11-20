@@ -1,0 +1,36 @@
+{
+  "project": "Kosi River Basin VGAE-only five-event SAR/FIM validation",
+  "gpkg": "D:\\KRB_FINAL_GRAPH_PROJECT_V6\\FSM_UNSUPERVISED\\KRB_FINAL_VGAE_DINKNET_FSM_REGIONALIZATION_LAYERS\\VGAE_FSM_5CLASS.gpkg",
+  "gpkg_layer": "vgae_fsm_5class",
+  "node_field": "node_index",
+  "cluster_field": "VGAE_FSM_cluster10",
+  "class_field_descriptive_only": "VGAE_FSM5",
+  "expected_basins": 508,
+  "expected_clusters": 10,
+  "events": {
+    "2020": "D:\\KRB\\SAR\\FIM\\2020\\FIM_2020.tif",
+    "2021": "D:\\KRB\\SAR\\FIM\\2021\\FIM_2021.tif",
+    "2022": "D:\\KRB\\SAR\\FIM\\2022\\FIM_2022.tif",
+    "2023": "D:\\KRB\\SAR\\FIM\\2023\\FIM_2023.tif",
+    "2024": "D:\\KRB\\SAR\\FIM\\2024\\FIM_2024.tif"
+  },
+  "fim_coding": {
+    "flood": 1,
+    "nonflood": 0
+  },
+  "flood_fraction_target_thresholds": {
+    "1pct": 0.01,
+    "5pct": 0.05
+  },
+  "score": "For each basin, pixel-weighted flood fraction of all other valid-FIM basins in the same original VGAE cluster.",
+  "binary_metric_threshold": "Median LOBO score within each event and target; descriptive only.",
+  "excluded_methods": [
+    "DinkNet",
+    "regionalization",
+    "direct FSM-class ROC-AUC",
+    "PSI ROC-AUC",
+    "retraining",
+    "reclassification"
+  ],
+  "interpretation": "Retrospective spatial association, not prospective independent prediction. Cluster-derived scores share spatial structure and are event-specific."
+}

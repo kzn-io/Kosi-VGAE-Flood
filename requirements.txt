@@ -1,0 +1,16 @@
+numpy
+pandas
+scipy
+scikit-learn
+rasterio
+geopandas
+shapely
+pyproj
+fiona
+pyogrio
+matplotlib
+seaborn
+joblib
+lightgbm
+xgboost
+shap

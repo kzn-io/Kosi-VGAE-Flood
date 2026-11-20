@@ -1,0 +1,4 @@
+Model,Status,SHAP_Shape,Basins_Explained,Predictors,Long_Table_Rows
+LightGBM,PASS,"(508, 34, 5)",508,34,86360
+Random_Forest,PASS,"(508, 34, 5)",508,34,86360
+XGBoost,PASS,"(508, 34, 5)",508,34,86360

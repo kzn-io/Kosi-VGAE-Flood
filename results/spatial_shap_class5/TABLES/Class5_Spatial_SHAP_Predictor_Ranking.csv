@@ -1,0 +1,7 @@
+rank,feature,publication_label,class5_mean_absolute_shap,class5_mean_signed_shap,microcatchments,signed_map_field,absolute_map_field
+1,ET_scaled_mean,Evapotranspiration,0.7325061830993338,-0.003900418449574926,508,S01,A01
+2,DEM_scaled_mean,Elevation,0.5003093122370786,0.016777596807025813,508,S02,A02
+3,Mean_Rainfall_scaled_mean,Mean rainfall,0.4280398783405015,0.061647664059809745,508,S03,A03
+4,SMAP_scaled_mean,Surface soil moisture (SMAP),0.35809663592211505,-0.0702856249914394,508,S04,A04
+5,ET_scaled_std,Evapotranspiration variability,0.33114087287740157,-0.00509805656820186,508,S05,A05
+6,Max1Day_Rainfall_scaled_mean,Maximum 1-day rainfall,0.3031938255315321,-0.012710670974706486,508,S06,A06

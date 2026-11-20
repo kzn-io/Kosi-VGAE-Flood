@@ -1,0 +1,16 @@
+KRB SPATIAL SHAP CLASS-5 — QUALITY CONTROL
+SHAP source: /mnt/data/Kosi_River_Basin_Flood_Susceptibility_GitHub/data/processed/LightGBM_SHAP_LONG_ALL_508.csv
+Polygon source: /mnt/data/Kosi_River_Basin_Flood_Susceptibility_GitHub/data/spatial_units/krb_microcatchment_boundaries_508.shp
+Target class: 5 (Very High)
+Expected microcatchments: 508
+Joined microcatchments: 508
+Polygon CRS: EPSG:32645
+Polygon join key: MICRO_ID (MICRO_ID 1–508 joined to SHAP basin_id 1–508)
+Selected predictors: ET_scaled_mean, DEM_scaled_mean, Mean_Rainfall_scaled_mean, SMAP_scaled_mean, ET_scaled_std, Max1Day_Rainfall_scaled_mean
+Invalid geometries repaired: 0
+Missing mapped SHAP values: 0
+Join validation: one-to-one; polygon MICRO_ID matched to SHAP basin_id.
+Signed maps: zero-centred diverging scale; percentile clipping affects display only.
+Magnitude maps: absolute SHAP values; percentile clipping affects display only.
+Atlas panels are independently normalized per predictor; compare spatial patterns, not raw colour intensity across factors.
+Interpretation: LightGBM surrogate explanations of VGAE-derived labels; not causal effects or observed flood occurrence.

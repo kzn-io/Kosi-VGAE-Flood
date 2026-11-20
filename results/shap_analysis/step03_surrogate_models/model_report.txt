@@ -1,0 +1,128 @@
+KRB VGAE-SHAP | STEP 3 SURROGATE MODEL REPORT
+======================================================================
+Training observations: 406
+Testing observations: 102
+Predictors: 34
+CV: 5-fold StratifiedKFold on training data
+Test set: untouched until final evaluation
+
+MODEL: LightGBM
+--------------------------------------------------
+Cross-validation (mean ± SD):
+accuracy: 0.9090 ± 0.0278
+balanced_accuracy: 0.9075 ± 0.0324
+f1_macro: 0.9077 ± 0.0315
+f1_weighted: 0.9091 ± 0.0282
+Held-out test metrics:
+Test_Accuracy: 0.8725
+Test_Balanced_Accuracy: 0.8755
+Test_Macro_F1: 0.8745
+Test_Weighted_F1: 0.8725
+Test_Macro_Precision: 0.8753
+Test_Macro_Recall: 0.8755
+Test confusion matrix (rows=actual, columns=predicted):
+[[20  2  1  0  0]
+ [ 3 17  0  1  0]
+ [ 0  0 18  0  2]
+ [ 0  1  2 18  0]
+ [ 1  0  0  0 16]]
+Class-wise report:
+              precision    recall  f1-score   support
+
+           1       0.83      0.87      0.85        23
+           2       0.85      0.81      0.83        21
+           3       0.86      0.90      0.88        20
+           4       0.95      0.86      0.90        21
+           5       0.89      0.94      0.91        17
+
+    accuracy                           0.87       102
+   macro avg       0.88      0.88      0.87       102
+weighted avg       0.87      0.87      0.87       102
+
+
+MODEL: Random_Forest
+--------------------------------------------------
+Cross-validation (mean ± SD):
+accuracy: 0.9089 ± 0.0393
+balanced_accuracy: 0.9049 ± 0.0409
+f1_macro: 0.9059 ± 0.0404
+f1_weighted: 0.9087 ± 0.0402
+Held-out test metrics:
+Test_Accuracy: 0.8824
+Test_Balanced_Accuracy: 0.8829
+Test_Macro_F1: 0.8839
+Test_Weighted_F1: 0.8824
+Test_Macro_Precision: 0.8916
+Test_Macro_Recall: 0.8829
+Test confusion matrix (rows=actual, columns=predicted):
+[[22  1  0  0  0]
+ [ 5 16  0  0  0]
+ [ 0  1 17  0  2]
+ [ 0  0  2 19  0]
+ [ 1  0  0  0 16]]
+Class-wise report:
+              precision    recall  f1-score   support
+
+           1       0.79      0.96      0.86        23
+           2       0.89      0.76      0.82        21
+           3       0.89      0.85      0.87        20
+           4       1.00      0.90      0.95        21
+           5       0.89      0.94      0.91        17
+
+    accuracy                           0.88       102
+   macro avg       0.89      0.88      0.88       102
+weighted avg       0.89      0.88      0.88       102
+
+
+MODEL: XGBoost
+--------------------------------------------------
+Cross-validation (mean ± SD):
+accuracy: 0.9040 ± 0.0262
+balanced_accuracy: 0.9037 ± 0.0303
+f1_macro: 0.9024 ± 0.0281
+f1_weighted: 0.9034 ± 0.0270
+Held-out test metrics:
+Test_Accuracy: 0.8725
+Test_Balanced_Accuracy: 0.8737
+Test_Macro_F1: 0.8725
+Test_Weighted_F1: 0.8724
+Test_Macro_Precision: 0.8743
+Test_Macro_Recall: 0.8737
+Test confusion matrix (rows=actual, columns=predicted):
+[[21  1  1  0  0]
+ [ 3 18  0  0  0]
+ [ 0  0 16  1  3]
+ [ 0  1  2 18  0]
+ [ 1  0  0  0 16]]
+Class-wise report:
+              precision    recall  f1-score   support
+
+           1       0.84      0.91      0.88        23
+           2       0.90      0.86      0.88        21
+           3       0.84      0.80      0.82        20
+           4       0.95      0.86      0.90        21
+           5       0.84      0.94      0.89        17
+
+    accuracy                           0.87       102
+   macro avg       0.87      0.87      0.87       102
+weighted avg       0.88      0.87      0.87       102
+
+
+MODEL COMPARISON (descriptive ordering by CV macro-F1):
+        Model  CV_Macro_F1_Mean  CV_Macro_F1_SD  Test_Macro_F1  Test_Balanced_Accuracy
+     LightGBM          0.907706        0.031463       0.874533                0.875482
+Random_Forest          0.905874        0.040390       0.883868                0.882873
+      XGBoost          0.902391        0.028116       0.872490                0.873701
+
+INTERPRETATION:
+These models approximate the VGAE-derived five-class labels.
+Their scores measure surrogate fidelity, not flood prediction accuracy.
+The random hold-out is not a spatially independent validation design.
+
+OUTPUTS:
+/mnt/data/Kosi_River_Basin_Flood_Susceptibility_GitHub/results/shap_analysis/step03_surrogate_models/model_metrics.csv
+/mnt/data/Kosi_River_Basin_Flood_Susceptibility_GitHub/results/shap_analysis/step03_surrogate_models/cross_validation.csv
+/mnt/data/Kosi_River_Basin_Flood_Susceptibility_GitHub/results/shap_analysis/step03_surrogate_models/test_predictions.csv
+/mnt/data/Kosi_River_Basin_Flood_Susceptibility_GitHub/results/shap_analysis/step03_surrogate_models/models
+
+STATUS: PASS

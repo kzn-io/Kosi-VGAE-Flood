@@ -1,0 +1,77 @@
+KRB VGAE-SHAP | STEP 2 SPLIT REPORT
+=================================================================
+Total basins: 508
+Predictor count: 34
+Target: VGAE_FSM5
+Training basins: 406
+Testing basins: 102
+Test fraction: 0.20
+Random state: 42
+Split method: Stratified random hold-out
+Identifier leakage check: PASS
+Train/test overlap check: PASS
+
+FULL DATA CLASS COUNTS:
+Class 1: 117
+Class 2: 103
+Class 3: 100
+Class 4: 103
+Class 5: 85
+
+TRAIN CLASS COUNTS:
+Class 1: 94
+Class 2: 82
+Class 3: 80
+Class 4: 82
+Class 5: 68
+
+TEST CLASS COUNTS:
+Class 1: 23
+Class 2: 21
+Class 3: 20
+Class 4: 21
+Class 5: 17
+
+PREDICTORS:
+Clay_0_5cm_scaled_mean
+Clay_0_5cm_scaled_std
+DEM_scaled_mean
+DEM_scaled_std
+Distance_to_Main_River_scaled_mean
+Distance_to_Main_River_scaled_std
+Drainage_Density_scaled_mean
+Drainage_Density_scaled_std
+ET_scaled_mean
+ET_scaled_std
+Max1Day_Rainfall_scaled_mean
+Max1Day_Rainfall_scaled_std
+Mean_Rainfall_scaled_mean
+Mean_Rainfall_scaled_std
+SMAP_scaled_mean
+SMAP_scaled_std
+SPI_scaled_mean
+SPI_scaled_std
+Sand_0_5cm_scaled_mean
+Sand_0_5cm_scaled_std
+Silt_0_5cm_scaled_mean
+Silt_0_5cm_scaled_std
+Slope_scaled_mean
+Slope_scaled_std
+TWI_scaled_mean
+TWI_scaled_std
+WorldCover_10_fraction
+WorldCover_20_fraction
+WorldCover_30_fraction
+WorldCover_40_fraction
+WorldCover_50_fraction
+WorldCover_60_fraction
+WorldCover_80_fraction
+WorldCover_90_fraction
+
+OUTPUTS:
+/mnt/data/Kosi_River_Basin_Flood_Susceptibility_GitHub/results/shap_analysis/step02_split/train_80pct.csv
+/mnt/data/Kosi_River_Basin_Flood_Susceptibility_GitHub/results/shap_analysis/step02_split/test_20pct.csv
+/mnt/data/Kosi_River_Basin_Flood_Susceptibility_GitHub/results/shap_analysis/step02_split/predictors.json
+/mnt/data/Kosi_River_Basin_Flood_Susceptibility_GitHub/results/shap_analysis/step02_split/split_report.txt
+
+STATUS: PASS

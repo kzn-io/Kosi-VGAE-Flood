@@ -1,0 +1,35 @@
+Feature,Predictor,MeanAbsSHAP_macro_average
+DEM_scaled_mean,Elevation,0.9234109940594666
+Mean_Rainfall_scaled_mean,Mean rainfall,0.5091051487135244
+ET_scaled_mean,Evapotranspiration,0.4305514813887699
+Max1Day_Rainfall_scaled_mean,Maximum 1-day rainfall,0.40875290067371317
+SMAP_scaled_mean,Surface soil moisture (SMAP),0.2455096465894658
+Sand_0_5cm_scaled_mean,Sand content (0–5 cm),0.20736116221897868
+Clay_0_5cm_scaled_mean,Clay content (0–5 cm),0.15061281610871005
+ET_scaled_std,Evapotranspiration variability,0.12115174484899056
+Silt_0_5cm_scaled_mean,Silt content (0–5 cm),0.11808678018644794
+WorldCover_60_fraction,Bare / sparse vegetation share,0.08268433281678604
+WorldCover_10_fraction,Tree cover share,0.07346046023964752
+Clay_0_5cm_scaled_std,Clay content (0–5 cm) variability,0.05613230748792508
+WorldCover_30_fraction,Grassland share,0.052753973853161676
+WorldCover_80_fraction,Permanent water share,0.050348618799980885
+Distance_to_Main_River_scaled_mean,Distance to main river,0.04568000505359171
+Slope_scaled_mean,Terrain slope,0.040047456867894515
+Sand_0_5cm_scaled_std,Sand content (0–5 cm) variability,0.03661806593850166
+DEM_scaled_std,Elevation variability,0.030970279137392108
+WorldCover_50_fraction,Built-up land share,0.030614967581286817
+TWI_scaled_std,Topographic wetness index variability,0.03060214758721245
+Distance_to_Main_River_scaled_std,Distance to main river variability,0.029621929822628172
+WorldCover_90_fraction,Herbaceous wetland share,0.02489142691936299
+Max1Day_Rainfall_scaled_std,Maximum 1-day rainfall variability,0.02425080094765399
+Drainage_Density_scaled_std,Drainage density variability,0.024236490683590586
+Drainage_Density_scaled_mean,Drainage density,0.019828434965456283
+SPI_scaled_std,Standardised precipitation index variability,0.014772268242141534
+WorldCover_40_fraction,Cropland share,0.014431655046619146
+Mean_Rainfall_scaled_std,Mean rainfall variability,0.012750216937636985
+SMAP_scaled_std,Surface soil moisture (SMAP) variability,0.01270713483136956
+SPI_scaled_mean,Standardised precipitation index,0.010569951264197103
+Slope_scaled_std,Terrain slope variability,0.009741285103524086
+TWI_scaled_mean,Topographic wetness index,0.009159893074025732
+Silt_0_5cm_scaled_std,Silt content (0–5 cm) variability,0.008630014344318513
+WorldCover_20_fraction,Shrubland share,0.0018215200989888183

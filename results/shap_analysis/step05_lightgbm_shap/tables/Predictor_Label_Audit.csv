@@ -1,0 +1,35 @@
+raw_predictor,publication_label
+Clay_0_5cm_scaled_mean,Clay content (0–5 cm)
+Clay_0_5cm_scaled_std,Clay content (0–5 cm) variability
+DEM_scaled_mean,Elevation
+DEM_scaled_std,Elevation variability
+Distance_to_Main_River_scaled_mean,Distance to main river
+Distance_to_Main_River_scaled_std,Distance to main river variability
+Drainage_Density_scaled_mean,Drainage density
+Drainage_Density_scaled_std,Drainage density variability
+ET_scaled_mean,Evapotranspiration
+ET_scaled_std,Evapotranspiration variability
+Max1Day_Rainfall_scaled_mean,Maximum 1-day rainfall
+Max1Day_Rainfall_scaled_std,Maximum 1-day rainfall variability
+Mean_Rainfall_scaled_mean,Mean rainfall
+Mean_Rainfall_scaled_std,Mean rainfall variability
+SMAP_scaled_mean,Surface soil moisture (SMAP)
+SMAP_scaled_std,Surface soil moisture (SMAP) variability
+SPI_scaled_mean,Standardised precipitation index
+SPI_scaled_std,Standardised precipitation index variability
+Sand_0_5cm_scaled_mean,Sand content (0–5 cm)
+Sand_0_5cm_scaled_std,Sand content (0–5 cm) variability
+Silt_0_5cm_scaled_mean,Silt content (0–5 cm)
+Silt_0_5cm_scaled_std,Silt content (0–5 cm) variability
+Slope_scaled_mean,Terrain slope
+Slope_scaled_std,Terrain slope variability
+TWI_scaled_mean,Topographic wetness index
+TWI_scaled_std,Topographic wetness index variability
+WorldCover_10_fraction,Tree cover share
+WorldCover_20_fraction,Shrubland share
+WorldCover_30_fraction,Grassland share
+WorldCover_40_fraction,Cropland share
+WorldCover_50_fraction,Built-up land share
+WorldCover_60_fraction,Bare / sparse vegetation share
+WorldCover_80_fraction,Permanent water share
+WorldCover_90_fraction,Herbaceous wetland share

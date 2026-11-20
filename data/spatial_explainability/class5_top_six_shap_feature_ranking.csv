@@ -1,0 +1,7 @@
+rank,feature,mean_abs_shap,n,vector_field_prefix
+1,ET_scaled_mean,0.7325061830993338,508,F01
+2,DEM_scaled_mean,0.5003093122370786,508,F02
+3,Mean_Rainfall_scaled_mean,0.4280398783405015,508,F03
+4,SMAP_scaled_mean,0.35809663592211505,508,F04
+5,ET_scaled_std,0.3311408728774016,508,F05
+6,Max1Day_Rainfall_scaled_mean,0.30319382553153207,508,F06
